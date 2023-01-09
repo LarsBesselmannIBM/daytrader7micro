@@ -37,8 +37,6 @@
 
     <basicRegistry id="basic" realm="WebRealm">
 	 <user name="Bob" password="bobpwd" />
-       <group name="grp1">
-         <member name="Bob" />
      </group>
     </basicRegistry>
 
@@ -55,10 +53,12 @@
     <!-- <webApplication id="daytrader" location="daytrader-ee7.ear" name="daytrader"/> -->
 	<application id="daytrader" location="daytrader7micro-web.ear" name="daytrader">
 		<application-bnd>
+			<security-role name="grp1">
+				<user name="bob" />
 			<security-role name="AllAuthenticated">
 				<special-subject type="ALL_AUTHENTICATED_USERS" />
 			</security-role>
-			<security-role name="EVERYONE">
+			<security-role name="grp2">
 				<special-subject type="EVERYONE" />
 			</security-role>
 		</application-bnd>
