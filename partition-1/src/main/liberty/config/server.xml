@@ -30,8 +30,10 @@
         <feature>beanValidation-1.1</feature>
 		<feature>localConnector-1.0</feature>
 		<feature>jaxrs-2.0</feature>
-		<feature>mpConfig-1.2</feature>
-     <!-- 		<feature>mpOpenAPI-1.0</feature> -->
+     <!-- 		
+        <feature>mpConfig-1.2</feature>
+        <feature>mpOpenAPI-1.0</feature> 
+     -->
         <feature>monitor-1.0</feature>
     </featureManager>
 
@@ -45,11 +47,13 @@
 		<httpOptions maxKeepAliveRequests="-1"/>
     </httpEndpoint>
 
-    <!--	<iiopEndpoint id="defaultIiopEndpoint" iiopPort="2809" iiopsPort="2810"/> -->
+    <!--	
+    <iiopEndpoint id="defaultIiopEndpoint" iiopPort="2809" iiopsPort="2810"/> -->
     <iiopEndpoint id="defaultIiopEndpoint" iiopPort="2809">
        <iiopsOptions iiopsPort="2810" sslRef="defaultSSLConfig"/>
     </iiopEndpoint>
-    <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustStoreRef="defaultTrustStore" />
+    <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustStoreRef="defaultKeyStore" />
+ -->
 	<!--	<keyStore id="defaultKeyStore" password="Liberty" /> -->
 
 
