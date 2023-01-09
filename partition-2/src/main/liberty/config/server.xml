@@ -44,7 +44,12 @@
 		<httpOptions maxKeepAliveRequests="-1"/>
 	</httpEndpoint>
 
-	<iiopEndpoint id="defaultIiopEndpoint" iiopPort="2809" iiopsPort="2810"/>
+<!--	<iiopEndpoint id="defaultIiopEndpoint" iiopPort="2809" iiopsPort="2810"/> -->
+    <iiopEndpoint id="defaultIiopEndpoint" iiopPort="2809">
+       <iiopsOptions iiopsPort="2810" sslRef="defaultSSLConfig"/>
+    </iiopEndpoint>
+    <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustStoreRef="defaultTrustStore" />
+
 
 	<!--	<keyStore id="defaultKeyStore" password="Liberty" /> -->
     
