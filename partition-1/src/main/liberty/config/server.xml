@@ -43,11 +43,16 @@
     <httpEndpoint host="*" httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint" >
 	    <tcpOptions soReuseAddr="true"/> 
 		<httpOptions maxKeepAliveRequests="-1"/>
-	</httpEndpoint>
+    </httpEndpoint>
 
-	<iiopEndpoint id="defaultIiopEndpoint" iiopPort="2809" iiopsPort="2810"/>
+    <iiopEndpoint id="defaultIiopEndpoint" iiopPort="2809">
+       <iiopsOptions iiopsPort="2810" sslRef="defaultSSLConfig"/>
+    </iiopEndpoint>
+    <ssl id="myDefaultSSLConfig" keyStoreRef="defaultKeyStore" trustStoreRef="defaultTrustStore" />
 
 	<!--	<keyStore id="defaultKeyStore" password="Liberty" /> -->
+
+
     
     <!-- <webApplication id="daytrader" location="daytrader-ee7.ear" name="daytrader"/> -->
 	<application id="daytrader" location="daytrader7micro-p1.ear" name="daytrader"/>
