@@ -37,7 +37,6 @@
 
     <basicRegistry id="basic" realm="WebRealm">
 	 <user name="bob" password="bobpwd" />
-     </group>
     </basicRegistry>
 
          
