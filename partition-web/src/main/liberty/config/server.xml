@@ -36,7 +36,10 @@
     </featureManager>
 
     <basicRegistry id="basic" realm="WebRealm">
-		<user name="Bob" password="bobpwd" />
+	 <user name="Bob" password="bobpwd" />
+       <group name="grp1">
+         <member name="Bob" />
+     </group>
     </basicRegistry>
 
          
