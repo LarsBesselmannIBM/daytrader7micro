@@ -60,8 +60,8 @@
 			</security-role>
 			<security-role name="grp2">
 				<special-subject type="EVERYONE" />
-			</security-role>
 -->
+			</security-role>
 		</application-bnd>
 	</application> 
 
