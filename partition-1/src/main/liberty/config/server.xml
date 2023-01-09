@@ -45,7 +45,7 @@
 	<!--	<keyStore id="defaultKeyStore" password="Liberty" /> -->
     
     <!-- <webApplication id="daytrader" location="daytrader-ee7.ear" name="daytrader"/> -->
-	<application id="daytrader" location="daytrader-ee7.ear" name="daytrader"/>
+	<application id="daytrader" location="daytrader7micro-p1.ear" name="daytrader"/>
 
 	<applicationManager autoExpand="true"/>
 
