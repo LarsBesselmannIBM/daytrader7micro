@@ -3,8 +3,8 @@
 
 
 # FROM adoptopenjdk/openjdk8-openj9 AS build-stage
-FROM docker.io/adoptopenjdk/openjdk8-openj9 AS build-stage
-# FROM icr.io/appcafe/ibm-semeru-runtimes:open-8-jdk-focal AS build-stage
+# FROM docker.io/adoptopenjdk/openjdk8-openj9 AS build-stage
+FROM icr.io/appcafe/ibm-semeru-runtimes:open-8-jdk-focal AS build-stage
 
 RUN apt-get update && \
     apt-get install -y maven unzip
