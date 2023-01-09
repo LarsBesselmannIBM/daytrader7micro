@@ -9,7 +9,7 @@ FROM docker.io/adoptopenjdk/openjdk8-openj9 AS build-stage
 RUN apt-get update && \
     apt-get install -y maven unzip
 
-COPY ./parttion-web /project
+COPY ./partition-web /project
 WORKDIR /project
 
 #RUN mvn -X initialize process-resources verify => to get dependencies from maven
