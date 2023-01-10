@@ -59,7 +59,21 @@
 
     
     <!-- <webApplication id="daytrader" location="daytrader-ee7.ear" name="daytrader"/> -->
-	<application id="daytrader" location="daytrader7micro-p1.ear" name="daytrader"/>
+	<application id="daytrader" location="daytrader7micro-p1.ear" name="daytrader">
+		<application-bnd>
+<!--
+			<security-role name="grp1">
+				<user name="bob" />
+			<security-role name="AllAuthenticated">
+				<special-subject type="ALL_AUTHENTICATED_USERS" />
+			</security-role>
+-->
+			<security-role name="grp2">
+				<special-subject type="EVERYONE" />
+			</security-role>
+		</application-bnd>
+	</application> 
+
 
 	<applicationManager autoExpand="true"/>
 
